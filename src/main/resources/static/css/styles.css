@@ -1,0 +1,270 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+	  font-family: "Roboto Condensed", sans-serif;
+	
+    height: 100%;
+}
+
+/* Encabezado fijo */
+header {
+    max-height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+h2{
+	 text-decoration: underline;
+	     text-decoration-color: #ddd;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: white;
+}
+
+/* Navegación */
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Secciones */
+section {
+    padding-top: 80px;
+    padding-bottom:80px;
+    margin-top: 70px; /* Asegura que cada sección esté separada del encabezado */
+    margin-bottom: 70px;
+}
+
+/* Estilos del perfil */
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2rem;
+    margin: auto;
+    background-color: white;
+}
+
+.perfil p {
+    max-width: 400px;
+}
+
+.foto img {
+    border-radius: 50%;
+    height: auto;
+    width: 250px;
+    border: 1px solid black;
+}
+
+/* Estilos de las secciones */
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.technologies {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega la sombra de caja */
+}
+
+.technologies img {
+    border-radius: 50px;
+    height: auto;
+    width: 50px;
+}
+
+.techs {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.techs img {
+    border-radius: 50px;
+    height: auto;
+    width: 50px;
+}
+
+.about {
+    display: flex;
+    padding: 2rem;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    max-width: 600px;
+}
+
+.projects {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.infobox {
+    display: flex;
+    padding: 32px;
+    gap: 1rem;
+    flex-direction: column;
+    border-radius:8px;
+    border: 1px solid black;
+    margin-top:48px;
+
+}
+
+.contact p {
+    margin-bottom: 0;
+}
+
+
+.linkgit {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.linkgit img {
+    border-radius: 50%; /* Mantiene las imágenes redondeadas */
+    width: 60px; /* Aumenta el tamaño de la imagen */
+    height: 60px; /* Aumenta el tamaño de la imagen */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
+    display: block; /* Elimina espacio extra debajo de la imagen */
+}
+
+.infobox img {
+    border-radius: 50px;
+    width: 40px;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.linkedin {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.linkedin a {
+    display: flex; /* Alinea los elementos hijos en una fila */
+    align-items: center; /* Alinea verticalmente los elementos hijos */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Estilos de las tarjetas de proyecto */
+.projectcard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición */
+    max-width: 600px; /* Ajusta el ancho máximo */
+    width: 100%; /* Se adapta al ancho disponible */
+    margin: 0 auto; /* Centra las tarjetas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra de caja */
+}
+
+.projectcard:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añade sombra al pasar el mouse */
+}
+
+.projectcard.active {
+    transform: scale(1.1); /* Aumenta más el tamaño al hacer clic */
+    z-index: 10; /* Asegura que la tarjeta activa esté por encima de otras */
+}
+
+.info {
+    flex: 1;
+    padding: 1rem;
+}
+
+.imagen {
+    flex: 1;
+    max-width: 300px; /* Ajusta el tamaño máximo del contenedor de la imagen */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra la imagen y el enlace */
+}
+
+.imagen img {
+    width: 100%; /* La imagen ocupará el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+    border: 1px solid #ddd;
+    border-radius: 16px;
+}
+
+.github-link {
+    margin-top: 1rem; /* Espacio arriba del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #0073e6; /* Color del enlace */
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita para destacar el enlace */
+}
+
+.github-link:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el ratón por encima */
+}
+
+/* Estilos del footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-left: 1px solid #E6ECF8;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ca6212;
+}
