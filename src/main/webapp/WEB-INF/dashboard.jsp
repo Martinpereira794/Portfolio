@@ -25,7 +25,7 @@
 			</div>	
 	</header>
 	<main>	
-		<div class="perfil m-4">
+		<div class="perfil m-2">
 			<div>
 			   <h1>Full-Stack Java Developer</h1>
 			   <p>Hi, I'm Martin Pereira. I design and develop simple and effective solutions, and I enjoy every moment of the learning process.</p>
@@ -40,7 +40,7 @@
 		</div>
 		<div class="skills">
 		    <h3>Technologies</h3>
-		    <div class="technologies p-4 m-2">
+		    <div class="technologies p-3 m-2">
 		        <div class="tech-item">
 		            <img src="/img/java.png" alt="Java Logo">
 		            <p>Java</p>
