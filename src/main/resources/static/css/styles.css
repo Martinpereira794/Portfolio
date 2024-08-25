@@ -13,7 +13,7 @@ body {
 
 /* Encabezado fijo */
 header {
-    max-height: 20vh;
+    max-height: 15vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,14 +79,20 @@ section {
 
 .technologies {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una línea */
     gap: 1rem;
-    align-items: center;
-    margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: center; /* Centra los elementos horizontalmente */
     max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto debajo de la imagen */
 }
 
 .technologies img {
@@ -95,19 +101,10 @@ section {
     width: 50px;
 }
 
-.techs {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: center;
-    margin: 0 auto;
-    justify-content: space-evenly;
-}
-
-.techs img {
-    border-radius: 50px;
-    height: auto;
-    width: 50px;
+.tech-item p {
+    margin-top: 0.5rem; /* Espacio entre la imagen y el texto */
+    font-size: 0.875rem; /* Tamaño de fuente ajustado */
+    color: #333; /* Color del texto */
 }
 
 .about {
@@ -227,6 +224,11 @@ section {
     z-index: 10;
 }
 
+.projectcard.active {
+    transform: scale(1.1);
+    z-index: 10;
+}
+
 .info {
     flex: 1;
     padding: 1rem;
@@ -279,3 +281,19 @@ footer {
 ::-webkit-scrollbar-thumb {
     background-color: black;
 }
+
+.techs {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+.techs img {
+    border-radius: 50px;
+    height: auto;
+    width: 50px;
+}
+

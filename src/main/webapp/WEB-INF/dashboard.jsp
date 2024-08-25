@@ -30,7 +30,7 @@
 			   <h1>Full-Stack Java Developer</h1>
 			   <p>Hi, I'm Martin Pereira. I design and develop simple and effective solutions, and I enjoy every moment of the learning process.</p>
 			   	<div class="linkgit">
-			  		<a href="https://www.linkedin.com/in/martin-pereira-39009b227/"><img src="/img/linkedinlogo.png" alt="linkedin"></a>
+			  		<a href="https://www.linkedin.com/in/martin-pereira-/"><img src="/img/linkedinlogo.png" alt="linkedin"></a>
 			   		<a href="https://github.com/Martinpereira794"><img src="/img/githublogo.png" alt="github"></a>
 			   	</div>
 			</div>
@@ -38,15 +38,46 @@
 			   <img src="/img/perfil.png" alt="Profile Photo">
 			</div>
 		</div>
-		<div class="skills mt-4">
-			<h3>Technologies</h3>
-			<div class="technologies p-4 m-2">
-				<img src="/img/java.png" alt="Java Logo">
-				<img src="/img/springboot.png" alt="Spring Logo">
-				<img src="/img/javascript.png" alt="JavaScript Logo">
-				<img src="/img/bootstrap.png" alt="Bootstrap Logo">
-				<img src="/img/git.png" alt="Git Logo">
-			</div> 
+		<div class="skills">
+		    <h3>Technologies</h3>
+		    <div class="technologies p-4 m-2">
+		        <div class="tech-item">
+		            <img src="/img/java.png" alt="Java Logo">
+		            <p>Java</p>
+		        </div>
+		        <div class="tech-item">
+		            <img src="/img/javascript.png" alt="JavaScript Logo">
+		            <p>JavaScript</p>
+		        </div>
+		        <div class="tech-item">
+		            <img src="/img/html.png" alt="HTML Logo">
+		            <p>HTML</p>
+		        </div>
+		        <div class="tech-item">
+		            <img src="/img/css.png" alt="CSS Logo">
+		            <p>CSS</p>
+		        </div>
+		        <div class="tech-item">
+		            <img src="/img/springboot.png" alt="Spring Boot Logo">
+		            <p>Spring Boot</p>
+		        </div>
+		        <div class="tech-item">
+		            <img src="/img/bootstrap.png" alt="Bootstrap Logo">
+		            <p>Bootstrap</p>
+		        </div>
+		        <div class="tech-item">
+		            <img src="/img/git.png" alt="Git Logo">
+		            <p>Git</p>
+		        </div>
+		        <div class="tech-item">
+		            <img src="/img/postman.png" alt="Postman Logo">
+		            <p>Postman</p>
+		        </div>
+		        <div class="tech-item">
+		            <img src="/img/mysql.png" alt="MySQL Logo">
+		            <p>MySQL</p>
+		        </div>
+		    </div>
 		</div>
 		<section id="about" class="about">
 			<h2 class="m-4">About me</h2>
@@ -102,7 +133,9 @@
 		</section>
 		<section id="contact" class="contact">
 			<h2>Contact me</h2>
-			<p>If you are interest in hiring me, email or connect and chat with me via Linkedin!</p>
+			<p>If you are interested in hiring me, feel free to email me or connect with me on LinkedIn to chat!
+
+			</p>
 			
 			<div class="infobox">
 				<div class="email">
@@ -110,7 +143,7 @@
 					<p> martinpereira794@gmail.com</p>
 				</div>
 				<div class="linkedin">
-				    <a href="https://www.linkedin.com/in/martin-pereira-39009b227/">
+				    <a href="https://www.linkedin.com/in/martin-pereira-/">
 				        <img src="/img/linkedin.png" alt="linkedin">
 				        <p>Martin Pereira</p>
 				    </a>
