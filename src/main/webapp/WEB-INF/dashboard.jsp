@@ -30,8 +30,8 @@
 			   <h1>Full-Stack Java Developer</h1>
 			   <p>Hi, I'm Martin Pereira. I design and develop simple and effective solutions, and I enjoy every moment of the learning process.</p>
 			   	<div class="linkgit">
-			  		<img src="/img/linkedinlogo.png" alt="linkedin">
-			   		<img src="/img/githublogo.png" alt="github">
+			  		<a href="https://www.linkedin.com/in/martin-pereira-39009b227/"><img src="/img/linkedinlogo.png" alt="linkedin"></a>
+			   		<a href="https://github.com/Martinpereira794"><img src="/img/githublogo.png" alt="github"></a>
 			   	</div>
 			</div>
 			<div class="foto">
@@ -118,8 +118,10 @@
 			</div>
 		</section>
 	</main>
-	<footer class="text-center mt-auto">
-	    <p class="text-muted">&copy; 2024</p>
+	<footer>
+	    <p>Made by Martin.</p>
+	   	<p class="text-muted">&copy; 2024</p>
+	    
 	</footer>
 </body>
 </html>

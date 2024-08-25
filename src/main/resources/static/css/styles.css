@@ -19,7 +19,8 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    border-bottom: 1px solid grey;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra de caja */
+	
 }
 
 h2{
@@ -118,6 +119,9 @@ section {
     background-color: white;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 100px;
+    
+    
 }
 
 .card {
@@ -145,9 +149,16 @@ section {
     gap: 1rem;
     flex-direction: column;
     border-radius:8px;
-    border: 1px solid black;
     margin-top:48px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añade sombra al pasar el mouse */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición */
+    
 
+}
+
+.infobox:hover{
+	  transform: scale(1.15); /* Aumenta ligeramente el tamaño al pasar el mouse */
+	
 }
 
 .contact p {
@@ -159,6 +170,7 @@ section {
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
+    
 }
 
 .linkgit img {
@@ -167,11 +179,19 @@ section {
     height: 60px; /* Aumenta el tamaño de la imagen */
     object-fit: cover; /* Asegura que la imagen se ajuste bien al contenedor */
     display: block; /* Elimina espacio extra debajo de la imagen */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición */
+    
+}
+
+.linkgit img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Añade sombra al pasar el mouse */
 }
 
 .infobox img {
     border-radius: 50px;
     width: 40px;
+    
 }
 
 .email {
@@ -206,6 +226,7 @@ section {
     width: 100%; /* Se adapta al ancho disponible */
     margin: 0 auto; /* Centra las tarjetas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra de caja */
+    gap:2rem;
 }
 
 .projectcard:hover {
@@ -221,6 +242,7 @@ section {
 .info {
     flex: 1;
     padding: 1rem;
+    
 }
 
 .imagen {
@@ -254,17 +276,19 @@ section {
 /* Estilos del footer */
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 2rem;
+    background-color: #f8f9fa; /* Color de fondo opcional para ver el área del footer */
+    border-top: 1px solid #ddd; /* Opcional: agrega una línea superior para visibilidad */
 }
 
 ::-webkit-scrollbar {
     width: 8px;
-    border-left: 1px solid #E6ECF8;
+    border-left: 1px solid #ddd;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ca6212;
+    background-color: black;
 }
